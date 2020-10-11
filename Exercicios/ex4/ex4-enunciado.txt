@@ -1,0 +1,7 @@
+Implementar um programa para simular a ocorrência de transações bancárias:
+- Banco possui 10 contas correntes e um total de R$ 100.000,00.
+- Banco possui 5 correntistas (threads) que movimentam recursos de uma conta para outra aleatoriamente. Os valores das movimentações também são aleatórios. 
+- Cada correntista fará 20 movimentações. 
+- A cada movimentação, o programa deve imprimir o identificador do cliente, o valor da movimentação, a conta de origem e a conta de destino e o total de saldo do banco. 
+- O programa deve tomar providências para que o saldo total do banco seja sempre de R$ 100.000,00, independente de quais transações ocorrerem. 
+- Não pode ser usada estrutura de dados thread-safe. 
