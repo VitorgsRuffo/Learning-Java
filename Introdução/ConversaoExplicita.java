@@ -4,7 +4,7 @@ public class ConversaoExplicita{
         int somaDasNotas = 55;
         int quantidadeDeNotas = 7;
 
-        //Apesar de 55 dividido por 7 ser dobule, ao dividir inteiro por inteiro consideramos apenas a parte inteira do cociente.
+        //Apesar de 55 dividido por 7 ser double, ao dividir inteiro por inteiro consideramos apenas a parte inteira do quociente.
         double media = somaDasNotas / quantidadeDeNotas; //o valor de media sera 7 e nao 7.8
 
 
