@@ -1,0 +1,2 @@
+//Classe Collections: oferece métodos estaticos e genericos que realizam operações sobre coleções que implementam a interface Collection ou uma de suas sub-interfaces. (e.g, pesquisa, ordenação, ...)
+//Obs: esses metodos sao genericos pois podemos passar qualquer coleção como sendo do tipo Collection ja que a sua implementação implementa Collection ou uma de suas sub-interfaces. (Polimorfismo)
