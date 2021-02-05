@@ -31,6 +31,9 @@ public class Carro {
 		
 		return (this.marca.equals(that.getMarca())
 				&& this.modelo.equals(that.getModelo()));
+
+		//Aqui chamamos o equals sobreescrito na Classe String para comparar a marca
+		// E o modelo dos carros.
 	}
 	
 	@Override

@@ -35,10 +35,9 @@ public class Main {
 	
 	public static void printNonDuplicates(Collection<Carro> values) {
 		
-		//Antes de inserir no Set os elementos da Collection passada o construtor
+		//Antes de inserir no Set os elementos da Collection passada, o construtor
 		//percorre o Set comparando seus elementos com o elemento atual da Collection.
-		//Caso aquele elemento ja esteja no Set (usa-se o equal/hashCode do elemento da Collection na comparacao)
-		//Ele nao é adicionado.
+		//Caso aquele elemento ja esteja no Set ele nao é adicionado. (usa-se o equal/hashCode do elemento da Collection na comparacao)
 		Set<Carro> set = new HashSet<>(values);
 		
 		System.out.println("Elementos do HashSet (Nao duplicados):");

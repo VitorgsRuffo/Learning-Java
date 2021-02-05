@@ -1,6 +1,7 @@
-//TreeSet é uma implementação da interface SortedSet.
-//A diferença é que implementações de SortedSet representam conjunto ordenados.
-//Sempre que inserimos um elemento novo na estrutura ele é posicionado na ordem correta.
+//A diferença entre as interfaces Set e SortedSet é: implementações de SortedSet sao iguais as do Set so que com um ponto extra, elas são conjuntos ordenados.
+//Sempre que inserimos um elemento novo na estrutura ele é posicionado na ordem correta (de acordo com a ordenaçao natural dos elementos ou com a ordenaçao atraves de um Comparator criado para os elementos).
+
+//TreeSet é uma implementação da interface SortedSet:
 
 import java.util.Arrays;
 import java.util.SortedSet;
@@ -8,7 +9,7 @@ import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
-        // create TreeSet from array colors
+
         String[] colors = {"yellow", "green", "black", "tan", "grey",
             "white", "orange", "red", "green"};
         
@@ -24,11 +25,11 @@ public class Main {
         printSet(tree); 
 
         System.out.print("headSet (\"orange\"):  ");
-        //Retorna um SortedSet com todos os elementos que estao antes do elemento passado como argumento.
+        //Retorna um SortedSet com todos os elementos que estao antes do elemento passado como argumento (exclusive).
         printSet(tree.headSet("orange"));
 
         System.out.print("tailSet (\"orange\"):  ");
-        //Retorna um SortedSet com todos os elementos que estao apos do elemento passado como argumento.
+        //Retorna um SortedSet com todos os elementos que estao apos do elemento passado como argumento. (inclusive)
         printSet(tree.tailSet("orange"));
 
         // get first and last elements
